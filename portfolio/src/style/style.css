@@ -10,6 +10,47 @@ body {
     
 }
 
+.home {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-top: 100px;
+}
+
+.home > h1:first-of-type {
+    font-size: 80px;
+    position: relative;
+    animation-name: welcome;
+    animation-duration: 3s;
+    animation-delay: 0s;
+}
+
+@keyframes welcome {
+    0% {top: 0px; left: -1000px};
+    100% {top: 0px; left: 0px};
+
+    /* 0%   {left:0px; top:0px;}
+    25%  {left:400px; top:0px;}
+    50%  {left:400px; top:400px;}
+    75%  {left:0px; top:400px;}
+    100% {left:0px; top:0px;} */
+}
+
+.home > h1:nth-of-type(2) {
+    font-size: 80px;
+    position: relative;
+    right: -150px;
+    animation-name: intro;
+    animation-duration: 3s;
+    animation-delay: 0s;
+}
+
+@keyframes intro {
+    0% {top: 0px; right: -1500px};
+    100% {top: 0px; right: -150px};
+}
+
 .navbar {
     position: fixed;
     z-index: 1;
@@ -73,7 +114,17 @@ body {
     position: fixed;
     top: 40px;
     right: 25px;
+    animation-name: profiles;
+    animation-delay: 0s;
+    animation-duration: 3.5s;
 }
+
+@keyframes profiles {
+    0% {top: -50px; right: 25px};
+    75% {top: -50px; right: 25px;};
+    100% {top: 40px; right: 25px;}
+}
+
 
 .code-profiles > ul {
     display: flex;

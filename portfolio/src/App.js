@@ -1,4 +1,5 @@
 import React from 'react'
+import Home from './components/Home'
 import Navbar from './components/Navbar'
 import Platforms from './components/Platforms'
 import About from './components/About'
@@ -14,6 +15,7 @@ export default function App() {
         <Navbar />
         <Platforms />
         <main className='main'>
+          <Home />
           <About />
           <Skills />
           <Projects />

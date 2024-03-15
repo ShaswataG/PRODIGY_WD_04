@@ -4,7 +4,7 @@ export default function About() {
     return (
         <section id="about" className="about">
             <h1>About</h1>
-            <p>Welcome to my portfolio! I am Shaswata Gogoi. I am a passionate and enthusiastic web developer currently
+            <p>I am a passionate and enthusiastic web developer currently
                             pursuing a Bachelor's degree in Computer Science and Engineering. Technology has always
                             fascinated me, and I am on a thrilling journey of exploring various tools in the tech industry. I
                             have gained a strong foundation in programming languages such as HTML, CSS, and JavaScript.
