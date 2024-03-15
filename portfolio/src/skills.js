@@ -1,0 +1,1 @@
+export default ["C++", "Python", "JavaScript", "ReactJS", "jquery", "C", "HTML", "CSS", "Bootstrap", "Git"]

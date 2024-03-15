@@ -1,0 +1,188 @@
+body {
+    background-image: url("../../public/images/endless-constellation.svg");
+    color: white;
+    font-size: 16px;
+    font-family: "Poppins";
+}
+
+.app {
+    display: flex;
+    
+}
+
+.navbar {
+    position: fixed;
+    z-index: 1;
+    background-color: black;
+    background-image: linear-gradient(325deg, black, grey)!important;
+    height: 100%;
+    width: 14%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 5px;
+    gap: 10px;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+.nav-container ul {
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-container ul li {
+    font-size: 28px;
+    height: 40px;
+    margin-bottom: 8px;
+}
+
+.nav-container a {
+    text-decoration: none;
+}
+
+/* .nav-link:active {
+    background-color: #535C91;
+} */
+
+.nav-link:hover {
+    font-weight: 600;
+    /* background-color: #535C91; */
+    transform: scale(1.3);
+    border-radius: 8px;
+}
+
+.code-profiles {
+    position: fixed;
+    top: 40px;
+    right: 25px;
+}
+
+.code-profiles > ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 30px;
+}
+
+.code-profiles li {
+    z-index: 1;
+}
+
+.code-profiles img:hover {
+    transform: scale(1.5);
+}
+
+.about p {
+    text-align: center;
+    font-size: 24px;
+}
+
+.main {
+    padding: 150px 10px;
+    padding-right: 100px;
+    margin-left: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.skills > h1 {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.skills-container {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    gap: 14px
+}
+
+.skills-container > span:hover {
+    transform: scale(1.2)
+    
+}
+
+.projects > h1 {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr; */
+    gap: 20px;
+}
+
+.project-url-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    position: absolute;
+    bottom: 5px;
+}
+
+.card {
+    background-color: rgb(72, 70, 70)!important;
+    color: white;
+    z-index: -1;
+    opacity: 1!important;
+}
+
+.card:hover {
+    box-shadow: 2px 2px 4px black, 0 0 2em lightblue, 0 0 0.4em darkblue!important;
+}
+
+.card-button {
+    background-color: #535C91!important;
+    cursor: pointer;
+}
+
+.card-button:hover {
+    transform: scale(1.3)!important;
+}
+
+.contacts > h1 {
+    margin-top: 40px;
+    margin-bottom: 30px;  
+}
+
+.contacts-container ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.footer {
+    background-color: black;
+    background-image: linear-gradient(165deg, black, grey)!important;
+    padding-top: 30px;
+    height: 130px;
+    width: 100%;
+    font-weight: 100!important;
+    letter-spacing: 1px;
+    text-align: center;
+    position: relative;
+    bottom: 0px;
+}
