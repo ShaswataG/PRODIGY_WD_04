@@ -14,9 +14,9 @@ export default [
         img: "instagram.svg",
         title: "Instagram"
     },
-    {
-        link: "tel:+917099005882",
-        img: "telephone.svg",
-        title: "Telephone"
-    }
+    // {
+    //     link: "tel:+917099005882",
+    //     img: "telephone.svg",
+    //     title: "Telephone"
+    // }
 ]

@@ -1,5 +1,7 @@
 body {
     background-image: url("../../public/images/endless-constellation.svg");
+    /* background-color: white; */
+    background-attachment: fixed;
     color: white;
     font-size: 16px;
     font-family: "Poppins";
@@ -15,6 +17,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: start;
+    gap: 40px;
     padding-top: 100px;
 }
 
@@ -51,16 +54,44 @@ body {
     100% {top: 0px; right: -150px};
 }
 
-.navbar {
+.hide {
     position: fixed;
+    left: 0;
     z-index: 1;
     background-color: black;
-    background-image: linear-gradient(325deg, black, grey)!important;
     height: 100%;
     width: 14%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    animation: hideAnimation 1.3s forwards;
+}
+
+@keyframes hideAnimation {
+    0% { left: 0; }
+    100% { left: -300px; }
+}
+
+.show {
+    position: fixed;
+    left: -300px;
+    z-index: 1;
+    background-color: black;
+    height: 100%;
+    width: 14%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    animation: showAnimation 1.3s forwards;
+}
+
+@keyframes showAnimation {
+    0% { left: -300px; }
+    100% { left: 0; }
+}
+
+.toggle-nav-button:hover {
+    transform: scale(2);
 }
 
 .user {
@@ -121,7 +152,7 @@ body {
 
 @keyframes profiles {
     0% {top: -50px; right: 25px};
-    75% {top: -50px; right: 25px;};
+    55% {top: -50px; right: 25px;};
     100% {top: 40px; right: 25px;}
 }
 
@@ -195,6 +226,7 @@ body {
 
 .card {
     background-color: rgb(72, 70, 70)!important;
+    /* box-shadow: 2px 2px 4px black, 0 0 2em lightblue, 0 0 0.4em darkblue!important; */
     color: white;
     z-index: -1;
     opacity: 1!important;
@@ -213,9 +245,13 @@ body {
     transform: scale(1.3)!important;
 }
 
-.contacts > h1 {
+#contacts > h1 {
     margin-top: 40px;
-    margin-bottom: 30px;  
+    margin-bottom: 30px!important;  
+}
+
+.contact-items:hover {
+    transform: scale(1.3);
 }
 
 .contacts-container ul {
@@ -227,7 +263,8 @@ body {
 
 .footer {
     background-color: black;
-    background-image: linear-gradient(165deg, black, grey)!important;
+    /* background-image: linear-gradient(95deg, black, grey)!important; */
+    background-color: black;
     padding-top: 30px;
     height: 130px;
     width: 100%;

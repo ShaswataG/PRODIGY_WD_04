@@ -9,12 +9,22 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 
 export default function App() {
+  const [nav, setNav] = React.useState(false)
+
+  const toggleNav = () => {
+    setNav(nav => !nav)
+  }
+
+
+
+
   return (
     <>
       <div className='app'>
-        <Navbar />
+        <Navbar navStatus={nav} toggleNav={toggleNav}/>
         <Platforms />
         <main className='main'>
+        <button style={{borderRadius: "50%", border: "0px", padding: "0px", width: "40px", height: "40px", position: "fixed", top: "330px", left: "0px"}} className="toggle-nav-button" onClick={toggleNav}><img width="40px" src="./images/arrow-right-circle-fill.svg"/></button>
           <Home />
           <About />
           <Skills />

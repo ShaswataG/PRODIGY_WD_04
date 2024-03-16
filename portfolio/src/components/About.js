@@ -6,8 +6,7 @@ export default function About() {
             <h1>About</h1>
             <p>I am a passionate and enthusiastic web developer currently
                             pursuing a Bachelor's degree in Computer Science and Engineering. Technology has always
-                            fascinated me, and I am on a thrilling journey of exploring various tools in the tech industry. I
-                            have gained a strong foundation in programming languages such as HTML, CSS, and JavaScript.
+                            fascinated me, and I am on a thrilling journey of exploring various tools in the tech industry.
                             I firmly believe that technology has the power to shape the future, and I aspire to make a
                             positive impact in this ever-changing industry. While web development is my current passion,
                             I am excited about the prospects of exploring machine learning in the future and leveraging
