@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/PRODIGY_WD_04/static/css/main.1f125143.css",
+    "main.js": "/PRODIGY_WD_04/static/js/main.5edf9dd8.js",
+    "static/media/endless-constellation.svg": "/PRODIGY_WD_04/static/media/endless-constellation.4d536fa86d99128af40b.svg",
+    "index.html": "/PRODIGY_WD_04/index.html",
+    "main.1f125143.css.map": "/PRODIGY_WD_04/static/css/main.1f125143.css.map",
+    "main.5edf9dd8.js.map": "/PRODIGY_WD_04/static/js/main.5edf9dd8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1f125143.css",
+    "static/js/main.5edf9dd8.js"
+  ]
+}
