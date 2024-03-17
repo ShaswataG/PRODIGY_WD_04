@@ -1,6 +1,6 @@
 export default [
     {
-        img: "../images/tic-tac-toe-project.png",
+        img: "https://shaswatag.github.io/PRODIGY_WD_04/images/tic-tac-toe-project.png",
         title: "Tic Tac Toe Web Application",
         description: "Try to fill up any three of the boxes in a row",
         projectUrl: "",
@@ -14,14 +14,14 @@ export default [
     //     repoUrl: "https://github.com/ShaswataG/drum-kit"
     // },
     {
-        img: "../images/landing-page-project.png",
+        img: "https://shaswatag.github.io/PRODIGY_WD_04/images/landing-page-project.png",
         title: "Landing Page",
         description: "I've made a landing page. It has the option to toggle between light and dark mode.",
         projectUrl: "",
         repoUrl: "https://github.com/ShaswataG/PRODIGY_WD_01"
     },
     {
-        img: "../images/stopwatch-web-app-project.png",
+        img: "https://shaswatag.github.io/PRODIGY_WD_04/images/stopwatch-web-app-project.png",
         title: "Stopwatch Web Application",
         description: "I've made a stopwatch application.",
         projectUrl: "",
@@ -42,7 +42,7 @@ export default [
     //     repoUrl: "https://github.com/ShaswataG/Tindog1"
     // },
     {
-        img: "../images/survey-form-project.png",
+        img: "https://shaswatag.github.io/PRODIGY_WD_04/images/survey-form-project.png",
         title: "Survey Form",
         description: "I have created a sample survey form.",
         projectUrl: "https://shaswatag.github.io/survey-form/",

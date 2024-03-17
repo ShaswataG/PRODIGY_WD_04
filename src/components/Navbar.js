@@ -8,7 +8,7 @@ export default function Navbar(props) {
     return (
         <nav className={`${navStatus} navbar`}>
             <div className="user">
-                <img style={{height: '40px', borderRadius: '50%'}} src="../images/Portfolio logo.png"/>
+                <img style={{height: '40px', borderRadius: '50%'}} src="https://shaswatag.github.io/PRODIGY_WD_04/images/Portfolio logo.png"/>
                 <h2>Shaswata</h2>
             </div>
             <div className="nav-container">
@@ -19,7 +19,7 @@ export default function Navbar(props) {
                     <li><a className="nav-link" href="#projects">Projects</a></li>
                     <li><a className="nav-link" href="#contacts">Contact</a></li>
                 </ul>
-                <button style={{borderRadius: "50%", border: "0px", padding: "0px", width: "40px", height: "40px", position: "absolute", top: "330px", right: "0px"}} className="toggle-nav-button" onClick={props.toggleNav}><img width="40px" src="./images/arrow-left-circle-fill.svg  "/></button>
+                <button style={{borderRadius: "50%", border: "0px", padding: "0px", width: "40px", height: "40px", position: "absolute", top: "330px", right: "0px"}} className="toggle-nav-button" onClick={props.toggleNav}><img width="40px" src="https://shaswatag.github.io/PRODIGY_WD_04/images/arrow-left-circle-fill.svg  "/></button>
             </div>
         </nav>
     )
