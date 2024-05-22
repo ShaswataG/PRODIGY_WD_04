@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/PRODIGY_WD_04/static/css/main.8ee64670.css",
+    "main.css": "/PRODIGY_WD_04/static/css/main.2c4ea98b.css",
     "main.js": "/PRODIGY_WD_04/static/js/main.4641def7.js",
     "static/media/endless-constellation.svg": "/PRODIGY_WD_04/static/media/endless-constellation.4d536fa86d99128af40b.svg",
     "index.html": "/PRODIGY_WD_04/index.html",
-    "main.8ee64670.css.map": "/PRODIGY_WD_04/static/css/main.8ee64670.css.map",
+    "main.2c4ea98b.css.map": "/PRODIGY_WD_04/static/css/main.2c4ea98b.css.map",
     "main.4641def7.js.map": "/PRODIGY_WD_04/static/js/main.4641def7.js.map"
   },
   "entrypoints": [
-    "static/css/main.8ee64670.css",
+    "static/css/main.2c4ea98b.css",
     "static/js/main.4641def7.js"
   ]
 }
