@@ -53,13 +53,13 @@ export default function App() {
 							top: '10px',
 							right: '10px',
 						}}
-						className="toggle-nav-button"
+						className="toggle-nav-button-mobile-view"
 						onClick={toggleNav}>
 						<img
 							src={
 								nav
-									? 'https://shaswatag.github.io/PRODIGY_WD_04/images/list.svg'
-									: 'https://shaswatag.github.io/PRODIGY_WD_04/images/x.svg'
+									? 'https://shaswatag.github.io/PRODIGY_WD_04/images/x.svg'
+									: 'https://shaswatag.github.io/PRODIGY_WD_04/images/list.svg'
 							}
 						/>
 					</button>
