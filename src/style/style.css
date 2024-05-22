@@ -1,19 +1,19 @@
 body {
     background-image: url("../../public/images/endless-constellation.svg");
     /* background-color: white; */
-    background-attachment: fixed;
+    background-attachment: scroll;
     color: white;
     font-size: 16px;
     font-family: "Poppins";
 }
 
 .app {
-    display: flex;
-    
+    /* display: flex; */
+    width: 100%;
 }
 
 .home {
-    height: 100vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -54,7 +54,7 @@ body {
     100% {top: 0px; right: -150px};
 }
 
-.hide {
+/* .hide {
     position: fixed;
     left: 0;
     z-index: 1;
@@ -88,7 +88,7 @@ body {
 @keyframes showAnimation {
     0% { left: -300px; }
     100% { left: 0; }
-}
+} */
 
 .toggle-nav-button:hover {
     transform: scale(2);
@@ -103,7 +103,7 @@ body {
     gap: 10px;
 }
 
-.nav-container {
+/* .nav-container {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -111,7 +111,11 @@ body {
     margin-top: 30px;
     width: 100%;
     text-align: center;
-}
+} */
+
+/* .nav-container {
+    visibility: hidden;
+} */
 
 .nav-container ul {
     list-style: none;
@@ -135,7 +139,6 @@ body {
 } */
 
 .nav-link:hover {
-    font-weight: 600;
     /* background-color: #535C91; */
     transform: scale(1.3);
     border-radius: 8px;
@@ -177,12 +180,17 @@ body {
     font-size: 24px;
 }
 
+#home, #about, #skills, #projects, #contacts {
+    width: 100%;
+}
+
 .main {
     padding: 150px 10px;
     padding-right: 100px;
     margin-left: 20%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 40px;
 }
 
@@ -194,8 +202,9 @@ body {
 .skills-container {
     font-size: 24px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    gap: 14px
+    gap: 14px;
 }
 
 .skills-container > span:hover {
@@ -273,4 +282,205 @@ body {
     text-align: center;
     position: relative;
     bottom: 0px;
+}   
+
+@media (min-width: 1320px) {
+    .hide {
+        position: fixed;
+        left: 0;
+        z-index: 1;
+        background-color: black;
+        height: 100%;
+        width: 14%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        animation: hideAnimation 1.3s forwards;
+    }
+    
+    @keyframes hideAnimation {
+        0% { left: 0; }
+        100% { left: -300px; }
+    }
+    
+    .show {
+        position: fixed;
+        left: -300px;
+        z-index: 1;
+        background-color: black;
+        height: 100%;
+        width: 14%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        animation: showAnimation 1.3s forwards;
+    }
+    
+    @keyframes showAnimation {
+        0% { left: -300px; }
+        100% { left: 0; }
+    }
+    .nav-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 30px;
+        margin-top: 30px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media ((max-width: 1320px) and (min-width: 900px)) {
+    .toggle-nav-button {
+        visibility: hidden;
+    }
+    main {
+        margin: 0 8%!important;
+        padding: 20px!important;
+        /* margin-top: 150px; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar {
+        position: fixed;
+        left: 0;
+        z-index: 1;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        left: 0;
+        width: 100%;
+        height: 10%;
+        animation: none;
+    }
+    #home {
+        padding: 200px;
+    }
+    .user {
+        margin-left: 5px;
+        width: 15%;
+    }
+    .nav-container {
+        margin: 0;
+        width: 80%;
+    }
+    .nav-container > ul {
+        display: flex;
+        flex-direction: row!important;
+        justify-content: space-around;
+    }
+    .code-profiles {
+        position: fixed;
+        top: 14vh;
+        left: 10px;
+        animation: profiles-slide-right;
+        animation-delay: 0s!important;
+        animation-duration: 3.5s!important;
+    }
+    @keyframes profiles-slide-right {
+        0% {top: 14vh; left: -150px};
+        100% {top: 14vh; left: 10px;}
+    }
+    .code-profiles > ul {
+        position: absolute;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .projects-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        /* grid-template-rows: 1fr; */
+        gap: 20px;
+    }
+}
+
+@media (max-width: 1040px) {
+    .projects-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* grid-template-rows: 1fr; */
+        gap: 20px;
+    }
+}
+
+@media (max-width: 900px) {
+    .toggle-nav-button:first-of-type {
+        visibility: hidden;
+    }
+    .toggle-nav-button {
+        /* visibility: hidden; */
+        z-index: 1;
+    }
+    main {
+        margin: 0 8%!important;
+        padding: 20px!important;
+        /* margin-top: 150px; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar {
+        position: fixed;
+        left: 0;
+        z-index: 1;
+        background-color: black;
+        /* position: absolute;  */
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 3em;
+        animation: none;
+    }
+    .hide {
+        visibility: visible;    /*actually classname should be show*/
+    }
+    .show {
+        visibility: hidden;     /*actually classname should be hide*/
+    }
+    .nav-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-container li {
+        text-align: center;
+    }
+    .code-profiles {
+        position: fixed;
+        top: 14vh;
+        left: 10px;
+        animation: profiles-slide-right;
+        animation-delay: 0s!important;
+        animation-duration: 3.5s!important;
+    }
+    @keyframes profiles-slide-right {
+        0% {top: 14vh; left: -150px};
+        100% {top: 14vh; left: 10px;}
+    }
+    .code-profiles > ul {
+        position: absolute;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media ((max-width: 720px) and (min-width: 300px)) {
+    .home > h1 {
+        font-size: 60px!important;
+    }
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+    .projects-container > div {
+        margin: 0 auto;
+    }
 }
